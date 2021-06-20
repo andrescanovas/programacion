@@ -97,8 +97,8 @@ while opcion!= '0':
        
         fecha = clima["list"][1]["dt_txt"]
         datos = clima["list"][1]
-
         print("El tiempo para el dia",fecha,'en',ciudad, "es de: ")
+        print()
         print (datos)
 
 
@@ -106,24 +106,27 @@ while opcion!= '0':
         datos = clima["list"][13]
         print()
         print("El tiempo para el dia",fecha,'en',ciudad, "es de: ")
+        print()
         print (datos)
 
         fecha = clima["list"][20]["dt_txt"]
         datos = clima["list"][20]
-        print()
         print("El tiempo para el dia",fecha,'en',ciudad, "es de: ")
+        print()
         print (datos)
-
+        
         fecha = clima["list"][27]["dt_txt"]
         datos = clima["list"][27]
         print()
         print("El tiempo para el dia",fecha,'en',ciudad, "es de: ")
+        print()
         print (datos)
 
         fecha = clima["list"][35]["dt_txt"]
         datos = clima["list"][35]
         print()
         print("El tiempo para el dia",fecha,'en',ciudad, "es de: ")
+        print()
         print (datos)
 
     elif(opcion == '4'):
@@ -139,11 +142,10 @@ while opcion!= '0':
 
         clima = get_weather_city(url_base,params)
         
-        fecha = clima["list"][1]["dt_txt"]
-        datos = clima["list"][1]
-        
-        print()
 
+        fecha = clima["list"][1]["dt_txt"]
+        datos = clima["list"][1]        
+        print()
 
         print("El tiempo para el dia",fecha,' en la latitud',lat,' y en la lon',lon," es de: ")
         print (datos)
@@ -164,12 +166,19 @@ while opcion!= '0':
         fecha = clima["list"][27]["dt_txt"]
         datos = clima["list"][27]
 
-        print()    
+        print()
+        
+        print("El tiempo para el dia",fecha,' en la latitud',lat,' y en la lon',lon, "es de: ")
+        print (datos)
+        fecha = clima["list"][35]["dt_txt"]
+        datos = clima["list"][35]
+
+        print()
 
         print("El tiempo para el dia",fecha,' en la latitud',lat,' y en la lon',lon, "es de: ")
         print (datos)
-        fecha = clima["list"][38]["dt_txt"]
-        datos = clima["list"][38]
+       
+
         print()
 
     elif(opcion == '0'):
